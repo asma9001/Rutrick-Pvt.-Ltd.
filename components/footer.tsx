@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-card border-t border-border py-8 sm:py-12">
@@ -5,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <div className="col-span-1 sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-3 sm:mb-4">
-              <img src="/logo.jpg" alt="Rutrick Logo" className="w-12 h-12 object-contain" />
+              <Image src="/logo.png" alt="Rutrick Logo" width={40} height={40} className="w-10 h-10" />
               <span className="text-lg sm:text-xl font-bold text-blue">Rutrick Pvt. Ltd.</span>
             </div>
             <p className="text-muted-foreground mb-3 sm:mb-4 max-w-md text-sm sm:text-base">

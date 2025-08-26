@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -16,7 +17,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/logo.jpg" alt="Rutrick Logo" className="w-12 h-12 object-contain" />
+           <Image src="/logo.jpg" alt="Rutrick Logo" width={40} height={40} className="w-10 h-10" />
             <span className="text-xl font-bold text-foreground">Rutrick Pvt. Ltd.</span>
           </div>
           <div className="hidden lg:flex items-center space-x-8">
